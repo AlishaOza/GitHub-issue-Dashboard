@@ -1,0 +1,56 @@
+<div class="p-6 flex items-center space-x-4">
+    <div>
+        <img class="h-12 w-12" src="github.png" alt="github logo">
+    </div>
+    <div>
+        <p class="text-white text-lg/7 font-extrabold md:font-bold">GitHub Issues <span class=" text-blue-900">Dashboard</span></p>
+        <p class="font-extralight text-white">Search and explore issues from any public repository</p>
+    </div>
+    
+</div>
+<div>
+<app-search-bar
+ (repo_Name)="repoData($event)"
+ ></app-search-bar>
+</div>
+<div>
+    <app-fiters-bar
+    *ngIf="component"
+     [All_issue]="totalCount"
+     [open_issue]="open"
+     [close_issue]="close"
+     (type)="typeOfIssue($event)"></app-fiters-bar>
+</div>
+<div class="min-h-screen bg-slate-950 p-6">
+
+  <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+
+    <!-- Left -->
+    <div class="lg:col-span-8">
+
+      <app-issue-cards
+      *ngIf="component"
+      (titel_issueToparent)="parent_function($event)"
+      (total)="total_issue($event)"
+      (open)="open_issue($event)"
+      (close)="close_issue($event)"
+      [typeOfIssue]="type"
+      [nameOfRepo]="name"
+      [isopen]="component"
+      ></app-issue-cards>
+
+    </div>
+
+    <!-- Right -->
+    <div class="lg:col-span-4 h-fit sticky top-6">
+
+      <app-issue-detail-card
+      *ngIf="isdataLoaded"
+      [issue_parent_tochile]="data_transer"
+           ></app-issue-detail-card>
+
+    </div>
+
+  </div>
+
+</div>

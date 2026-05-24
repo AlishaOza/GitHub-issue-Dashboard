@@ -3,7 +3,10 @@
 {
   "extends": "./tsconfig.json",
   "compilerOptions": {
+    "module": "ESNext",
+    "forceConsistentCasingInFileNames": true,
     "outDir": "./out-tsc/spec",
+    "rootDir": "./src/app",
     "types": [
       "vitest/globals"
     ]
