@@ -1,59 +1,68 @@
-# GithubIssueDashboard
+![Angular](https://img.shields.io/badge/Angular-19-red)
+![Tailwind](https://img.shields.io/badge/TailwindCSS-3-blue)
+![TypeScript](https://img.shields.io/badge/TypeScript-blue)
+# Github Issue Dashboard
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.0.4.
+A modern GitHub Issues Dashboard built using Angular, Tailwind CSS, and GitHub REST API that allows users to search repositories, explore issues, filter by status, and view issue details in an interactive UI.
 
-## Development server
+## Live Demo
 
-To start a local development server, run:
+🔗 https://your-vercel-link.vercel.app
+
+## Screenshots
+### Home Page
+<img width="1919" height="904" alt="Screenshot 2026-05-24 213034" src="https://github.com/user-attachments/assets/1b24da9e-6e3d-4c85-97e8-68c6584b45ea" />
+
+### Issue Detail Panel
+<img width="1895" height="905" alt="Screenshot 2026-05-24 213056" src="https://github.com/user-attachments/assets/de86ebaa-e62d-4575-8988-6f0f45249bf5" />
+
+## Features
+
+- Search GitHub repositories dynamically
+- View repository issues
+- Filter issues by Open / Closed state
+- Issue detail side panel
+- Virtual scrolling using Angular CDK
+- Local storage persistence
+- Loading and error handling
+- Responsive UI using Tailwind CSS
+- Real-time GitHub REST API integration
+
+## Tech Stack
+
+- Angular
+- TypeScript
+- Tailwind CSS
+- Angular CDK
+- GitHub REST API
+
+## Installation
 
 ```bash
+git clone https://github.com/yourusername/github-issues-dashboard.git
+
+cd github-issues-dashboard
+
+npm install
+
 ng serve
-```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
 
-## Code scaffolding
+---
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+---
 
-```bash
-ng generate component component-name
-```
+# 8. Future Improvements
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+```md id="7ունդl"
+## Future Improvements
 
-```bash
-ng generate --help
-```
+- Markdown rendering for issue descriptions
+- Infinite pagination
+- Advanced sorting
+- Dark/Light theme toggle
 
-## Building
+## Author
 
-To build the project run:
+Alisha Oza
 
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
