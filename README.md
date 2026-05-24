@@ -7,7 +7,7 @@ A modern GitHub Issues Dashboard built using Angular, Tailwind CSS, and GitHub R
 
 ## Live Demo
 
-🔗 https://your-vercel-link.vercel.app
+🔗 git-hub-issue-dashboard-rust.vercel.app
 
 ## Screenshots
 ### Home Page
